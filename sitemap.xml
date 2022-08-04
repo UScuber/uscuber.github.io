@@ -1,30 +1,30 @@
 ---
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xlmns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for post in site.posts %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
-    <lastmod>{{ post.date }}</lastmod>
+    <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   {% endfor %}
   <url>
     <loc>{{ site.url }}/blog/</loc>
-    <lastmod>{{ site.time }}</lastmod>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>{{ site.url }}/about/</loc>
-    <lastmod>{{ site.time }}</lastmod>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>{{ site.url }}/contact/</loc>
-    <lastmod>{{ site.time }}</lastmod>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
     <changefreq>never</changefreq>
     <priority>0.2</priority>
   </url>
