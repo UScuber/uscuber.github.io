@@ -30,3 +30,5 @@ gem "wdm", :platforms => [:mingw, :x64_mingw, :mswin]
 
 
 gem "webrick", "~> 1.7"
+
+gem 'jekyll-sitemap'
