@@ -12,4 +12,3 @@ layout: home
   gtag('js', new Date());
   gtag('config', 'G-KFBKG370MN');
 </script>
-google-site-verification: google46cdb78f015ec5e8.html
