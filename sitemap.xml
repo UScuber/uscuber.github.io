@@ -4,7 +4,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>{{ site.url }}</loc>
-    <lastmod>{{ site.date | date: "%Y-%m-%d" }}</lastmod>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
     <changefreq>always</changefreq>
     <priority>1.0</priority>
   </url>
