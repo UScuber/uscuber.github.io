@@ -1,0 +1,28 @@
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KFBKG370MN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KFBKG370MN');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+
+  <meta property="og:title" content="{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}">
+  <meta property="og:locale" content="ja_JP">
+  <!-- check it later -->
+  <meta name="description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+  <meta property="og:url" content="{{ page.url | relative_url }}">
+  <meta property="og:site_name" content="{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="{{ site.title }}">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link type="application/atom+xml" rel="alternate" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title }}">
+</head>
